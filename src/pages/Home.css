@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
+
+.box {
+    font-family: 'Darumadrop One', cursive;
+    border :solid rgb(36, 35, 35);
+    height: calc(80vh - 130px);
+    background: url('https://thumbs.dreamstime.com/b/abstract-food-background-top-view-dark-rustic-kitchen-table-wooden-cutting-board-cooking-spoon-frame-banner-137304354.jpg');
+    text-align: center;
+    font-size: larger;
+    color: rgb(217, 249, 146);   
+}
+.box h1 {
+    margin-left: 25rem;
+}
