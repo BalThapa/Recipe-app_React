@@ -4,7 +4,7 @@ import './AddYourOwn.css';
 const AddYourOwn = () => {
     return (
         <div>
-            <div className='form'>
+            <div className='form-wrapper'>
                 <h2>Add new Recipe</h2>
                 <form >
                 <div>
@@ -36,7 +36,7 @@ const AddYourOwn = () => {
                                 <label htmlFor="quantity">Quantity</label>
                                 <input type="text" name="quantity" id="quantity" />
                             </div>
-                            <div>
+                            <div className='bkt'>
                                 <label htmlFor="ingredient">Ingredient</label>
                                 <input type="text" name="ingredient" id="ingredient" />
                             </div>

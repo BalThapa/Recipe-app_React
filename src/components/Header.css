@@ -4,11 +4,11 @@
     color: rgb(241, 92, 92);
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
     position: sticky;
     z-index: 1;
     top: 0;
-    height: 2rem;
+    height: 1rem;
    
 }
