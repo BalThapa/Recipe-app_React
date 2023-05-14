@@ -1,0 +1,23 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.search label{
+    font-weight:350;
+    margin-bottom: 0.5rem;
+    font-size: larger;
+}
+.search input {
+    width: 15rem;
+    border-radius: 5px;
+    border-width: thin;   
+}
+
+.search h1{
+    font-weight:300;
+    margin-top: 3rem;
+}
+ 

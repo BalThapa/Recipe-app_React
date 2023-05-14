@@ -22,6 +22,10 @@ input, .origin {
     margin-top: 0.5rem;
 }
 
+label{
+    font-weight: 400;
+}
+
 h2 {
     margin-left: 2rem;
 }

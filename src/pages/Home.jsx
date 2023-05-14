@@ -6,12 +6,13 @@ const Home = () => {
     return (
       <div>
         <div className='box'>
-          <h1>A recipe has no soul.</h1>
-          <h1>You ,as the cook must bring soul to the recipe.</h1>
-          <h1>-THOMAS KELLER</h1>
+          <h2>A recipe has no soul.</h2>
+          <h2>You ,as the cook must bring soul to the recipe.</h2>
+          <h2>-THOMAS KELLER</h2>
           <NavLink to="/recipeList"><button>Browse Recipes</button></NavLink>
         </div>
-        <h2>Looking For the recipes?</h2>
+        <div className='list'>
+        <h2>Looking For the recipes?</h2></div>
         <section>
           <div className='box1'>
             <h3>Browse recipes</h3>
@@ -29,8 +30,8 @@ const Home = () => {
             <NavLink to="https://en.bc.fi/qualifications/full-stack-web-developer-program/" className="NavLink">Business College Helsinki homepage</NavLink>
           </div>
         </section>
-
       </div>
+      
     );
 };
 
