@@ -3,6 +3,7 @@ import './Form.css';
 
 const Form = ({submit, change, recipe}) => {
     const [numIngredients, setNumIngredients] = useState(1);
+    
     return (
         <div>
             <div className='form-wrapper'>
@@ -54,7 +55,7 @@ const Form = ({submit, change, recipe}) => {
                 
                 <div>
                     <label htmlFor="instructions">Instructions</label>
-                    <textarea name="instruction" id="instructions" cols="15" rows="5"></textarea>
+                    <textarea name="instruction" id="instructions" cols="15" rows="5" required></textarea>
                 </div>
 
                 <button type='submit' id='submit' name='submit' value='submit'>Post Recipe</button>
