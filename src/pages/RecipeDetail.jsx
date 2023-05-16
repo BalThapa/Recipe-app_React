@@ -31,7 +31,7 @@ const RecipeDetail = () => {
             <p>{data.description}</p>
             {data?.ingredients?.map((item, index) => (
             <p key={index}>{item.quantity} {item.ingredient}</p>
-            ))};
+            ))}
             <p>{data.instruction}</p>
         </div>
         <div className='back'>

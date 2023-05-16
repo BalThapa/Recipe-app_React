@@ -22,14 +22,16 @@
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.box1 {
+.box1 img{
     height: 3rem;
     width: 3rem;
+    background-position: cover;
     border: solid;
     border-radius: 50%;
     position: absolute;
     top: 0;
     right:0;    
 }
+
 
  
