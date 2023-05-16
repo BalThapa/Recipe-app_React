@@ -4,13 +4,19 @@ import Form from "../components/Form"
 
 
 const AddYourOwn = () => {
+    
     const [recipe, setRecipe]=useState({
         name:"",
         author:"",
         country:"",
         description:"",
         image:"",
-        ingredients:[],
+        ingredients:[
+            {
+                "quantity": "",
+                "ingredient": ""
+              }
+        ],
         instruction:""
     });
 

@@ -1,8 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
+import axios from 'axios';
 import './Form.css';
 
 const Form = ({submit, change, recipe}) => {
     const [numIngredients, setNumIngredients] = useState(1);
+    const [countryList, setCountryList]= useState([]);
+
+    useEffect(()=>{
+      
+        axios.get('https://restcountries.com/v3.1/all')
+          .then(res=>{setCountryList(res.data.map((country) => {return(country.name.common)}))
+          });
+
+      },[])
     
     return (
         <div>
@@ -11,28 +21,29 @@ const Form = ({submit, change, recipe}) => {
                 <form onSubmit={submit} onChange={change} recipe={recipe} method="post">
                 <div>
                     <label htmlFor="name" >Dish Name</label>
-                    <input type="text" name="name" id='name' required/>
+                    <input type="text" name="name" id='name'/>
                 </div>
 
                 <div>
                     <label htmlFor="author" >Author</label>
-                    <input type="text" name="author" id='author' required/>
+                    <input type="text" name="author" id='author' />
                 </div>
 
                 <div>
                     <label htmlFor="origin" id="origin">Origin Country</label>
                     <select name="country" className='origin' id="origin" >
-                        <option value="" invalid="true" hidden>Select a country </option>
+                    <option value="select">Select</option>
+                     {countryList.map(country=>{return(<option key={country} value={country}> {country} </option>)})}   
                     </select>
                 </div>
                 <div>
                     <label htmlFor="description">Description</label>
-                    <textarea name="description" id="description" cols="15" rows="5" required></textarea>
+                    <textarea name="description" id="description" cols="15" rows="5" ></textarea>
                 </div>
 
                 <div>
                     <label htmlFor="pic">Food pic</label>
-                    <input type="url" id="pic" name="image" alt="pic" required/>
+                    <input type="url" id="pic" name="image" alt="pic" />
                 </div>
 
                 <div>
@@ -45,7 +56,7 @@ const Form = ({submit, change, recipe}) => {
                             </div>
                             <div className='bkt'>
                                 <label htmlFor={`ingredient-${index}`}>Ingredient</label>
-                                <input type="text" name={`ingredient-${index}`} id={`ingredient-${index}`}/>
+                                <input type="text" name={`ingredient-${index}`} id={`ingredient-${index}`} required/>
                             </div>
                     </div>   
                     ))}
@@ -55,10 +66,10 @@ const Form = ({submit, change, recipe}) => {
                 
                 <div>
                     <label htmlFor="instructions">Instructions</label>
-                    <textarea name="instruction" id="instructions" cols="15" rows="5" required></textarea>
+                    <textarea name="instruction" id="instructions" cols="15" rows="5" ></textarea>
                 </div>
 
-                <button type='submit' id='submit' name='submit' value='submit'>Post Recipe</button>
+                <button type='submit' id='submit' name='submit' value='submit'onClick={() => setNumIngredients(1)}>Post Recipe</button>
                 </form>
             </div> 
             

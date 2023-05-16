@@ -6,8 +6,8 @@ import axios from 'axios';
 const RecipeList = () => {
     const [data, setData]= useState([]);
     const [isLoading, setIsLoading]=useState(false);
-     const[searchInput, setSearchInput]=useState("");
-     console.log(data);
+    const[searchInput, setSearchInput]=useState("");
+  
      useEffect (()=>{
         setIsLoading(true);
         axios.get("http://localhost:4001/recipes")

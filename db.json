@@ -2,31 +2,47 @@
   "recipes": [
     {
       "id": 1,
-      "name": " ",
-      "author": "",
-      "country": "",
-      "description": "",
-      "image": "",
+      "name": "Pulau",
+      "author": "Bal",
+      "country": "Nepal",
+      "description": "Amazing rice side dish with complex flavors, but simple preparation with sweet and salty elements. Re-heats easily ",
+      "image": "https://www.indianveggiedelight.com/wp-content/uploads/2020/04/coconutmilk_pulao.jpg",
       "ingredients": [
         {
-          "quantity": "",
-          "ingredient": ""
+          "quantity": "1.5 cups",
+          "ingredient": " Basmati rice"
+        },
+        {
+          "quantity": "2 ts",
+          "ingredient": "pure ghee "
+        },
+        {
+          "quantity": "1.5 cups",
+          "ingredient": " Basmati rice"
+        },
+        {
+          "quantity": " 2 each",
+          "ingredient": " Cinamon stick, whole cloves, bay leaves "
+        },
+        {
+          "quantity": "4 ounces",
+          "ingredient": " Cashews "
+        },
+        {
+          "quantity": "1 ts",
+          "ingredient": " salt "
         }
       ],
-      "instruction": ""
+      "instruction": "Wash the rice several times and let it soak for 30 minutes. Drain rice well in s sieve. Heat the ghee in skillet over medium-low heat and cook. Add all the ingredients and spices to the pan and stir fry. Add two cups of water, cover and bring to boil. Tighten the cover and let the rice cook in low heat. Simmer for 20 minutes, adding additional water during cooking, if necessary, until rice is tender and fluffy and all the water is absorbed. "
     },
     {
-      "name": "fadsfdf",
-      "author": "santosh",
+      "name": "veg",
+      "author": "jhgv",
       "country": "",
-      "description": "fgafda",
+      "description": "vsdfsd",
       "image": "https://cdn.pixabay.com/photo/2015/05/04/10/16/vegetables-752153_1280.jpg",
       "ingredients": [],
-      "instruction": "ewFAEWF",
-      "quantity-0": "1kg",
-      "ingredient-0": "flor",
-      "quantity-1": "10 gram ",
-      "ingredient-1": "salt",
+      "instruction": "ewfaef",
       "id": 2
     }
   ]

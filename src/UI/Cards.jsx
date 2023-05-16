@@ -1,14 +1,35 @@
-import React from 'react';
+//import React, { useEffect, useState}from 'react';
+//import axios from 'axios';
 import { Link } from 'react-router-dom';
 import "./Cards.css";
 
 
-const Cards = ({recipe}) => {
+const Cards = ({name, country,image, recipe}) => {
+    // const [flag, setFlag] = useState('');
+    // const [isLoading, setIsLoading]=useState(false);
+
+    // useEffect ( ()=>{
+    //     setIsLoading(true);
+    //     axios.get(`https://restcountries.com/v3.1/all/${flag}`)
+    //     .then(res=>setFlag(res.data[0].flags.svg))
+    //     setIsLoading(false)
+       
+    // },[flag])
+    
+    // if (isLoading){
+    //     <p>...Loading...</p>
+    // }
+
     return (
-        <div>
-            <img src={recipe.image} alt="{recipe.name}" />
-            <h2>{recipe.name}</h2>
-            <Link to={`/recipe/${recipe.id}`}>More Info</Link>
+        <div className='card'>
+            
+            <div className='box'><img src={recipe.image} alt={name} /></div>
+            <div className='box1'><img src={recipe.flag} alt="" /></div>
+            <div className='detail'>
+                <h3>Name: {recipe.name}</h3> 
+                <p>Author: {recipe.author}</p>
+                <Link to={`/recipeList/${recipe.id}`}><button >See more...</button></Link>
+            </div>
         </div>
     );
 };
