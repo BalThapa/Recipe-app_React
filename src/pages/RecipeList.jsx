@@ -6,8 +6,8 @@ import axios from 'axios';
 const RecipeList = () => {
     const [data, setData]= useState([]);
     const [isLoading, setIsLoading]=useState(false);
-    const[searchInput, setSearchInput]=useState("");
-  
+     const[searchInput, setSearchInput]=useState("");
+     console.log(data);
      useEffect (()=>{
         setIsLoading(true);
         axios.get("http://localhost:4001/recipes")
@@ -19,7 +19,7 @@ const RecipeList = () => {
       }
     
       const searchFilter = data.filter(item => {
-        return item.name.includes(searchInput)
+        return item.name.toLowerCase().includes(searchInput.toLowerCase())
       })
     if (isLoading){
         <p>...Loading...</p>

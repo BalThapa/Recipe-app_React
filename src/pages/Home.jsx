@@ -6,13 +6,15 @@ const Home = () => {
     return (
       <div>
         <div className='container'>
-        {/* <video autoPlay loop muted play-inline id="background_video">
-          <source src="https://player.vimeo.com/external/456896527.sd.mp4?s=5f834301c1c496b5e7f8fa8c0772defd2760df7b&profile_id=164&oauth2_token_id=57447761" />
-           </video> */}
+        <video autoPlay loop muted play-inline>
+          <source src="https://player.vimeo.com/external/456922009.sd.mp4?s=f894112c1684a29e06fd8ae2064e33e3db9090a7&profile_id=164&oauth2_token_id=57447761" />
+           </video>
+          <div className='thoughts'>
           <h2>A recipe has no soul.</h2>
           <h2>You ,as the cook must bring soul to the recipe.</h2>
           <h2>-THOMAS KELLER</h2>
           <NavLink to="/recipeList"><button>Browse Recipes</button></NavLink>
+          </div>
         </div>
         <div className='list'>
         <h2>Looking For the recipes?</h2></div>

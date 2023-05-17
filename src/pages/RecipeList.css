@@ -25,4 +25,13 @@
     font-weight:300;
     margin-top: 3rem;
 }
+ button{
+    background-color: rgb(100, 91, 91);
+    color: wheat;
+    padding: 6px;
+    border: none;
+    font-size: large;
+    border-radius: 3px;
+   
+ }
  

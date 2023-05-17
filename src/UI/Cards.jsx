@@ -1,29 +1,24 @@
 import React, { useEffect, useState}from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import "./Cards.css";
 
 
-const Cards = ({name, country, recipe}) => {
-const [flag, {/*setFlag*/}] = useState('');
-    // const [isLoading, setIsLoading]=useState(false);
+const Cards = ({recipe}) => {
+const [flag, setFlag] = useState('');
 
-    // useEffect ( ()=>{
-    //     setIsLoading(true);
-    //     axios.get(`https://restcountries.com/v3.1/name/${country}`)
-    //     .then(response=>setFlag(response.data[0].flags.svg))
-    //     setIsLoading(false)   
-    // },[country])
+    useEffect ( ()=>{
+         
+        axios.get(`https://restcountries.com/v3.1/name/${recipe.country}`)
+        .then(response=>setFlag(response.data[0].flags.svg))
+    },[recipe.country])
     
-    //  if (isLoading){
-    //     <p>...Loading...</p>
-    // }
 
     return (
         <div className='card'>
             
-            <div className='box'><img src={recipe.image} alt={name} /></div>
-            <div className='box1'><img src={flag} alt={country} /></div>
+            <div className='box'><img src={recipe.image} alt='recipe' /></div>
+            <div className='box1'><img src={flag} alt='flag' /></div>
 
             <div className='detail'>
                 <h3>Name: {recipe.name}</h3> 

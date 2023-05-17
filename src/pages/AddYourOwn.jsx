@@ -6,16 +6,15 @@ import Form from "../components/Form"
 const AddYourOwn = () => {
     
     const [recipe, setRecipe]=useState({
+        id: null,
         name:"",
         author:"",
         country:"",
         description:"",
         image:"",
         ingredients:[
-            {
-                "quantity": "",
-                "ingredient": ""
-              }
+            {"quantity": "",
+            "ingredient": ""},    
         ],
         instruction:""
     });
@@ -30,7 +29,20 @@ const AddYourOwn = () => {
     }
 
     const changeRecipeHandler = (e) => {
+        const {name,value} = e.target;
+
+        if(name.includes('quantity') || name.includes('ingredient')){
+            const [, i] = name.split("-");
+            setRecipe((prevRecipe)=>{
+                const updatedIngredients=[...prevRecipe.ingredients];
+                updatedIngredients[i] ={...updatedIngredients[i],
+                [name.includes('quantity-')? "quantity":"ingredient"]:value};
+                return{...prevRecipe,ingredients:updatedIngredients};
+            })
+        }else{
         setRecipe ({...recipe, [e.target.name]:e.target.value});
+        console.log(recipe)
+    }
     }
 
    

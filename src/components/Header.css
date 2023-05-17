@@ -12,3 +12,13 @@
     height: 1rem;
    
 }
+
+.Nal{
+    text-decoration: double;
+    color: rgb(241, 92, 92); 
+}
+
+.Nal:hover{
+    text-decoration: none;
+}
+

@@ -31,8 +31,8 @@ const Form = ({submit, change, recipe}) => {
 
                 <div>
                     <label htmlFor="origin" id="origin">Origin Country</label>
-                    <select name="country" className='origin' id="origin" >
-                    <option value="select">Select</option>
+                    <select name="country" className='origin' >
+                    <option value="select" className='option'>Select</option>
                      {countryList.map(country=>{return(<option key={country} value={country}> {country} </option>)})}   
                     </select>
                 </div>
@@ -50,7 +50,7 @@ const Form = ({submit, change, recipe}) => {
                     <label htmlFor="">Ingredients</label>
                     {[...Array(numIngredients)].map((_,index)=>(
                         <div className='ing' key={index}>
-                        <div>
+                            <div>
                                 <label htmlFor={`quantity-${index}`}>Quantity</label>
                                 <input type="text" name={`quantity-${index}`} id={`quantity-${index}`}/>
                             </div>
@@ -61,7 +61,7 @@ const Form = ({submit, change, recipe}) => {
                     </div>   
                     ))}
                     
-                    <button className='addMore'onClick={() => setNumIngredients(numIngredients+1)}>Add More</button>
+                    <button className='addMore' onClick={() => setNumIngredients(numIngredients+1)}>Add More</button>
                 </div>
                 
                 <div>

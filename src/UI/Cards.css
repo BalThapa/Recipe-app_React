@@ -23,15 +23,15 @@
 }
 
 .box1 img{
-    height: 3rem;
-    width: 3rem;
-    background-position: cover;
-    border: solid;
-    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
     position: absolute;
     top: 0;
-    right:0;    
+    right:0;
+    
 }
-
 
  

@@ -3,26 +3,39 @@
 
 .container {
     font-family: 'Darumadrop One', cursive;
-    border :solid rgb(36, 35, 35);
     height: calc(80vh - 130px);
-    background: url('https://thumbs.dreamstime.com/b/abstract-food-background-top-view-dark-rustic-kitchen-table-wooden-cutting-board-cooking-spoon-frame-banner-137304354.jpg');
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: xx-large;
-    color: rgb(217, 249, 146);   
+    font-size: large;
+    color: rgb(217, 249, 146); 
+    position: relative;
 }
-.container h2 {
-    margin-left: 25rem;
+.container video{
+    position: absolute;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+.thoughts {
+    margin-right: 45rem;
+    z-index: 0;
+    text-align: left;
+
 }
 
-button {
+.thoughts button {
     background-color: rgb(100, 91, 91);
     color: wheat;
     padding: 6px;
     border: none;
     font-size: large;
     border-radius: 3px;
+    margin-left: 5rem;
+    margin-top: 2rem;
 }
 
 h2{
