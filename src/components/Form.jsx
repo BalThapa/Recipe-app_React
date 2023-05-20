@@ -21,12 +21,12 @@ const Form = ({submit, change, recipe}) => {
                 <form onSubmit={submit} onChange={change} recipe={recipe} method="post">
                 <div>
                     <label htmlFor="name" >Dish Name</label>
-                    <input type="text" name="name" id='name'/>
+                    <input type="text" name="name" id='name' required/>
                 </div>
 
                 <div>
                     <label htmlFor="author" >Author</label>
-                    <input type="text" name="author" id='author' />
+                    <input type="text" name="author" id='author' required/>
                 </div>
 
                 <div>
@@ -38,12 +38,12 @@ const Form = ({submit, change, recipe}) => {
                 </div>
                 <div>
                     <label htmlFor="description">Description</label>
-                    <textarea name="description" id="description" cols="15" rows="5" ></textarea>
+                    <textarea name="description" id="description" cols="15" rows="5" required></textarea>
                 </div>
 
                 <div>
                     <label htmlFor="pic">Food pic</label>
-                    <input type="url" id="pic" name="image" alt="pic" />
+                    <input type="url" id="pic" name="image" alt="pic" required/>
                 </div>
 
                 <div>
@@ -52,7 +52,7 @@ const Form = ({submit, change, recipe}) => {
                         <div className='ing' key={index}>
                             <div>
                                 <label htmlFor={`quantity-${index}`}>Quantity</label>
-                                <input type="text" name={`quantity-${index}`} id={`quantity-${index}`}/>
+                                <input type="text" name={`quantity-${index}`} id={`quantity-${index}`} required/>
                             </div>
                             <div className='bkt'>
                                 <label htmlFor={`ingredient-${index}`}>Ingredient</label>
@@ -66,7 +66,7 @@ const Form = ({submit, change, recipe}) => {
                 
                 <div>
                     <label htmlFor="instructions">Instructions</label>
-                    <textarea name="instruction" id="instructions" cols="15" rows="5" ></textarea>
+                    <textarea name="instruction" id="instructions" cols="15" rows="5" required></textarea>
                 </div>
 
                 <button type='submit' id='submit' name='submit' value='submit'onClick={() => setNumIngredients(1)}>Post Recipe</button>

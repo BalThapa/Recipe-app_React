@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
 
-
+body{
+    margin: 0 auto;
+}
 .container {
+    background-color: black;
     font-family: 'Darumadrop One', cursive;
-    height: calc(80vh - 130px);
+    min-height: calc(80vh - 130px);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -65,7 +68,7 @@ section{
 }
 
 .bag{
-    height: 20vh;
+    min-height: 20vh;
     width: 25vw;
     padding: 1rem;
     padding-top: 0;
@@ -86,4 +89,6 @@ section{
 
 .NavLink:hover{
     color: black;
+    text-decoration: none;
 }
+

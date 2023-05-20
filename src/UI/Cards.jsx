@@ -21,7 +21,7 @@ const [flag, setFlag] = useState('');
             <div className='box1'><img src={flag} alt='flag' /></div>
 
             <div className='detail'>
-                <h3>Name: {recipe.name}</h3> 
+                <h4>Name: {recipe.name}</h4> 
                 <p>Author: {recipe.author}</p>
                 <Link to={`/recipeList/${recipe.id}`}><button >See more...</button></Link>
             </div>

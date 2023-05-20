@@ -9,6 +9,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a.active{
+    color: white;
+}
+
 nav ul li {
     display: inline-block;
     justify-content: space-between;
