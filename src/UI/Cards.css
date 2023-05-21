@@ -17,8 +17,7 @@
 
 .box img{
     height: 12rem;
-    width: 15rem;
-    background-position: cover;
+    width: 15rem; 
     border: none;
     border-radius: 0.5rem 0.5rem 0 0;
 }
@@ -27,8 +26,6 @@
     height: 4rem;
     width: 4rem;
     border-radius: 10px;
-    background-size: cover;
-    background-position: center center;
     position: absolute;
     top: 0;
     right:0;   

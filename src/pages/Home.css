@@ -76,6 +76,7 @@ section{
     border-width: thin;
     border-radius: 5px;
     position: relative;
+    margin-bottom: 5rem;
 }
 
 .NavLink{

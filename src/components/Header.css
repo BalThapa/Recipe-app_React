@@ -4,7 +4,6 @@
     color: rgb(241, 92, 92);
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
     align-items: center;
     position: sticky;
     z-index: 1;

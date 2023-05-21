@@ -1,11 +1,17 @@
 import React from 'react';
+import './Modal.css';
 
-const Modal = () => {
+const Modal = ({onClose}) => {
+    const modalHandler = () =>{
+        onClose();
+    };
     return (
-        <div className='overla'y>
+        <div className='overlay'>
            
             <div className='modal'>
-                <video src="https://www.shutterstock.com/shutterstock/videos/1041986026/preview/stock-footage-animation-in-motion-graphics-of-a-check-mark-symbol-symbolizing-right-motion-graphics.webm">Recipe Added Successfully!!</video>
+                <p className='thumbs'>👍</p>
+                <h2>Adding Recipe Successful!!</h2> 
+                <button className='close' onClick= {modalHandler}>OK</button>
             </div>
       </div>
        

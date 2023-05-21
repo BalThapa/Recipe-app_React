@@ -5,6 +5,7 @@ import RecipeList from "./pages/RecipeList";
 import AddYourOwn from "./pages/AddYourOwn";
 import RecipeDetail from "./pages/RecipeDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/addRecipe" element={<AddYourOwn />} />
         <Route path="/recipeList/:recipedetail" element={<RecipeDetail />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

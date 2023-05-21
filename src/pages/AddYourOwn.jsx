@@ -5,7 +5,7 @@ import Modal from "../components/Modal";
 
 
 const AddYourOwn = () => {
-    
+    const [modal, setModal]=useState(false)
     const [recipe, setRecipe]=useState({
         id: null,
         name:"",
@@ -23,12 +23,12 @@ const AddYourOwn = () => {
     const addRecipeHandler = (e) => {
         e.preventDefault();
         axios.post("http://localhost:4001/recipes", recipe)
-        .then(res =>(res.data))
+        .then(res => {
+            setRecipe({recipe})
+            setModal(true)
+        })
         .catch(error =>(error))
-        setRecipe({recipe})
         e.target.reset ();
-
-        alert("Recipe added!")
     }
 
     const moreRecipeHandler = (e) => {
@@ -47,9 +47,9 @@ const AddYourOwn = () => {
         }
     }
 
-    //const modalHandler = () => {
-
-   // }
+    const modalHandler = () =>{
+        setModal(false);
+    }
 
    
     return (
@@ -59,8 +59,13 @@ const AddYourOwn = () => {
             change= {moreRecipeHandler}
             recipe= {recipe}
             />
-            <Modal/>
+            <div>
+                {modal && <Modal onClose={modalHandler}/> }
+            
+            </div>
+            
         </div>
+        
     );
 };
 

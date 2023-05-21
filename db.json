@@ -40,7 +40,7 @@
       "name": "Nepali Pizza",
       "author": "Bal Krishna",
       "country": "Nepal",
-      "description": "One pf the beloved Nepali style street food called CHATAMRI in local language which means crust made of rice flour. It some how looks like pizza but made with rice flour with the toppings either with vegitables like onion, tomatoes or minced meat of buffalo/chicken and often comes with cheese and egg on top.",
+      "description": "One of the beloved Nepali style street food called CHATAMRI in local language which means crust made of rice flour. It some how looks like pizza but made with rice flour with the toppings either with vegitables like onion, tomatoes or minced meat of buffalo/chicken and often comes with cheese and egg on top.",
       "image": "https://www.internationalcuisine.com/wp-content/uploads/2017/07/Nepali-pizza-684x1024.jpg",
       "ingredients": [
         {
@@ -72,7 +72,7 @@
       "author": "Bal",
       "country": "India",
       "description": "Lassi is a popular yogurt-based drink that originated in the Indian subcontinent and is widely enjoyed in Nepal as well. It is a cooling, refreshing beverage that is consumed in both sweet and savory forms. Lassi is often served as a chilled drink, making it a popular choice to beat the heat during hot summer months.",
-      "image": "https://www.altitudehimalaya.com/media/files/Blog/Travel-Guides/beverages-in-nepal/lassi2.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA-wEPv_uj_sRNwgc65eLS5tfhRVkLEU0LHQ&usqp=CAU",
       "ingredients": [
         {
           "quantity": "300ml",
@@ -92,45 +92,6 @@
         }
       ],
       "instruction": "Begin with fresh, chilled yogurt. Whisk the yogurt in a bowl or blend it in a blender to make it smooth and creamy.Add water or milk to the yogurt to achieve the desired consistency. For a thicker Lassi, use less liquid, while for a thinner consistency, add more liquid.Adjust the proportions based on your preference.Add sugar or salt, depending on whether you're making a sweet or savory Lassi. Adjust the sweetness or saltiness to your taste.If you're making a flavored Lassi, such as Mango Lassi, blend the yogurt with chopped ripe mangoes or mango pulp. For Mint Lassi, blend the yogurt with fresh mint leaves.For added flavor, you can also include spices like cardamom, saffron, or roasted cumin powder.Blend all the ingredients together until smooth and frothy.Pour the Lassi into glasses, and garnish with a sprig of mint, a pinch of ground spices, or a drizzle of rose water, if desired. Serve chilled."
-    },
-    {
-      "id": 4,
-      "name": "<sdfsd",
-      "author": "<sdcdsf",
-      "country": "Kuwait",
-      "description": "<sdcadsfc<",
-      "image": "https://cdn.pixabay.com/photo/2015/05/04/10/16/vegetables-752153_1280.jpg",
-      "ingredients": [
-        {
-          "quantity": "2 cups ",
-          "ingredient": "Rice flour"
-        },
-        {
-          "quantity": "10 gram ",
-          "ingredient": "salt"
-        }
-      ],
-      "instruction": "<dsc<ds"
-    },
-    {
-      "id": 5,
-      "name": "ghcjhgvm",
-      "author": "fgncjgn",
-      "country": "Kuwait",
-      "description": "zgrefdsxfb",
-      "image": "https://cdn.pixabay.com/photo/2015/05/04/10/16/vegetables-752153_1280.jpg",
-      "ingredients": [
-        {
-          "quantity": "1kg",
-          "ingredient": "flor"
-        },
-        {
-          "quantity": "10 gram ",
-          "ingredient": "salt"
-        }
-      ],
-      "instruction": "ytjfv"
     }
   ]
 }
-   
