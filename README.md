@@ -17,3 +17,7 @@ The main function of this app is to make the user able to browse the required re
 # Sources and Help used.
 
 For the completion of this project i have taken a lot of help from our teacher Margit, my friends, old tasks done previously in class along with websites like stackoverflow, w3school, react basics web pages etc.
+
+# To access the server data.
+
+-npm run server
