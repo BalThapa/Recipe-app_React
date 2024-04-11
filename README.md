@@ -1,3 +1,11 @@
+# To access the server data.
+
+-npm run server
+
+# To run the app in local browser
+
+-npm start
+
 # About the app.
 
 This is a recipe-app build using basic react. From which hooks, components and props are used. Various dependencies are installed and used as per the need. Methods like GET, POST are also used.
@@ -18,6 +26,3 @@ The main function of this app is to make the user able to browse the required re
 
 For the completion of this project i have taken a lot of help from our teacher Margit, my friends, old tasks done previously in class along with websites like stackoverflow, w3school, react basics web pages etc.
 
-# To access the server data.
-
--npm run server
