@@ -65,52 +65,6 @@
         }
       ],
       "instruction": "In a bowl mix together rice flour and water until you get a thin batter but not too watery. Add water slowly and more if needed.In another bowl mix together the meat if using, onion, cilantro, cumin-coriander powder, turmeric powder, chili powder, pepper, salt, ginger-garlic paste, serrano and two eggs.In a skillet that has a lid, heat a tablespoon of oil to medium high heat. A non-stick pan works great for this.Pour the batter to make a 6 inch circle like a pancake.\nAdd a portion of the other mixture on top\nBreak a whole egg on top.Add about a tablespoon of cheeseCover and cook for 7-8 minutesServe hot you can ads some cilantro and tomatoes for garnish"
-    },
-    {
-      "id": 3,
-      "name": "Mango Lassi",
-      "author": "Bal",
-      "country": "India",
-      "description": "Lassi is a popular yogurt-based drink that originated in the Indian subcontinent and is widely enjoyed in Nepal as well. It is a cooling, refreshing beverage that is consumed in both sweet and savory forms. Lassi is often served as a chilled drink, making it a popular choice to beat the heat during hot summer months.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA-wEPv_uj_sRNwgc65eLS5tfhRVkLEU0LHQ&usqp=CAU",
-      "ingredients": [
-        {
-          "quantity": "300ml",
-          "ingredient": "Yogurt"
-        },
-        {
-          "quantity": "100ml",
-          "ingredient": "milk"
-        },
-        {
-          "quantity": "2 Tsp",
-          "ingredient": "Sugar"
-        },
-        {
-          "quantity": "As per taste",
-          "ingredient": "Fruits ,spices , herbs and ice cream"
-        }
-      ],
-      "instruction": "Begin with fresh, chilled yogurt. Whisk the yogurt in a bowl or blend it in a blender to make it smooth and creamy.Add water or milk to the yogurt to achieve the desired consistency. For a thicker Lassi, use less liquid, while for a thinner consistency, add more liquid.Adjust the proportions based on your preference.Add sugar or salt, depending on whether you're making a sweet or savory Lassi. Adjust the sweetness or saltiness to your taste.If you're making a flavored Lassi, such as Mango Lassi, blend the yogurt with chopped ripe mangoes or mango pulp. For Mint Lassi, blend the yogurt with fresh mint leaves.For added flavor, you can also include spices like cardamom, saffron, or roasted cumin powder.Blend all the ingredients together until smooth and frothy.Pour the Lassi into glasses, and garnish with a sprig of mint, a pinch of ground spices, or a drizzle of rose water, if desired. Serve chilled."
-    },
-    {
-      "id": 4,
-      "name": "DAL BHAT",
-      "author": "B.K",
-      "country": "Nepal",
-      "description": "argfergsdfvwrvwr wergwergwre qegfwergq qwfgqgfs qe q",
-      "image": "https://t4.ftcdn.net/jpg/04/27/20/65/360_F_427206531_P2PkuQBC7jWNP40jwhqkrpMm9xdqFWkU.jpg",
-      "ingredients": [
-        {
-          "quantity": "200gm",
-          "ingredient": "Dal"
-        },
-        {
-          "quantity": "500gm ",
-          "ingredient": "Rice"
-        }
-      ],
-      "instruction": "zdfvs vbstgdtrg dgdrdth fgbdt"
     }
   ]
 }

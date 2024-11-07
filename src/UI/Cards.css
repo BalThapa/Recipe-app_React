@@ -35,4 +35,21 @@
     font-weight: bolder;
 }
 
+.cross {
+    background-color: rgb(100, 91, 91);
+    color: wheat;
+    height: 2rem;
+    width: 2rem;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    padding: 10px;
+}
+
  
