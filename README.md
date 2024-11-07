@@ -1,4 +1,5 @@
-[![Node CI](https://github.com/BalThapa/Recipe-app_React/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/BalThapa/Recipe-app_React/actions/workflows/jekyll-gh-pages.yml)
+[![Node CI](https://github.com/BalThapa/Recipe-app_React/actions/workflows/static.yml/badge.svg)](https://github.com/BalThapa/Recipe-app_React/actions/workflows/static.yml)
+[![Node CI](https://github.com/BalThapa/Recipe-app_React/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BalThapa/Recipe-app_React/actions/workflows/pages/pages-build-deployment)
 
 # To access the server data.
 
