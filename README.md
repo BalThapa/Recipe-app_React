@@ -1,3 +1,5 @@
+[![Node CI](https://github.com/BalThapa/Recipe-app_React/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/BalThapa/Recipe-app_React/actions/workflows/jekyll-gh-pages.yml)
+
 # To access the server data.
 
 -npm run server
@@ -8,7 +10,7 @@
 
 # About the app.
 
-This is a recipe-app build using basic react. From which hooks, components and props are used. Various dependencies are installed and used as per the need. Methods like GET, POST are also used.
+This is a recipe-app build using basic react. From which hooks, components and props are used. Various dependencies are installed and used as per the need. Methods like GET, POST, DELETE are also used. Editing the recipe is also on the way.
 
 # Contents of the app.
 
