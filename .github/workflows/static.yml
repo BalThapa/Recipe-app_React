@@ -1,12 +1,9 @@
 name: Deploy Static Site to GitHub Pages
 
 on:
-  # Trigger on push to the main branch or manually via the Actions tab
   push:
-    branches: ["main"]
-
-  # Allow manual trigger from the Actions tab
-  workflow_dispatch:
+    branches: ["main"]  # Trigger on pushes to the main branch
+  workflow_dispatch:  # Allow manual trigger from the Actions tab
 
 permissions:
   contents: read
@@ -33,16 +30,18 @@ jobs:
         run: npm install  # Install dependencies from package.json
 
       - name: Build site
-        run: npm run build  # Run the build script (typically generates a "build" or "dist" directory)
+        run: npm run build  # Run the build script (this generates the "build" or "dist" directory)
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build  # Path to your build directory (could be "dist" or something else based on your project)
+          path: ./build  # Path to your build directory (could be "dist" or similar depending on your project)
 
   deploy:
     runs-on: ubuntu-latest
-    needs: build
+    needs: build  # This job will run after the "build" job finishes
+    environment:
+      name: github-pages  # Ensure this matches the environment set in GitHub repository settings
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
