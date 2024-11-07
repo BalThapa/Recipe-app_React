@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-bottom: 5rem;
 
 }
@@ -44,7 +45,8 @@ h2 {
 .addMore {
     padding: 10px;
     width: 8rem;
-    background-color: rgb(253, 180, 72);
+    background-color: rgb(100, 91, 91);
+    color: wheat;
     border-radius: 5px;
 }
 
@@ -56,8 +58,12 @@ textarea{
     padding: 10px;
     width: 8rem; 
     margin-left: 2rem; 
-    background-color: rgb(253, 180, 72);
+    background-color: rgb(100, 91, 91);
+    color: wheat;
     border-radius: 5px;
 }
 
+.delIng {
+    margin-top: 1.5rem;
+}
   

@@ -58,6 +58,9 @@ const Form = ({submit, change, recipe}) => {
                                 <label htmlFor={`ingredient-${index}`}>Ingredient</label>
                                 <input type="text" name={`ingredient-${index}`} id={`ingredient-${index}`} required/>
                             </div>
+                            <div >
+                                <button className='delIng'>X</button>
+                            </div>
                     </div>   
                     ))}
                     

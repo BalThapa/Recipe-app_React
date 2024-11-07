@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body{
     margin: 0 auto;
@@ -10,10 +10,12 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: large;
-    color: rgb(217, 249, 146); 
+    font-size: x-large;
+    font-weight:bolder;
+    color: rgb(100, 124, 50); 
     position: relative;
 }
+
 .container video{
     position: absolute;
     background-attachment: fixed;
@@ -24,10 +26,9 @@ body{
 
 }
 .thoughts {
-    margin-right: 45rem;
+    margin: 10rem  10rem 10rem 10rem;
     z-index: 0;
     text-align: left;
-
 }
 
 .thoughts button {
@@ -47,11 +48,13 @@ h2{
 }
 
 h3{
-    font-weight:350;  
+    font-weight:bold;
+
 }
 
 p{
     line-height: 1.5;
+    font-weight: 500;
 }
 
 .list{
@@ -69,18 +72,19 @@ section{
 
 .bag{
     min-height: 20vh;
-    width: 25vw;
+    background-color: antiquewhite;
+    width: 25rem;
     padding: 1rem;
     padding-top: 0;
-    border: solid;
     border-width: thin;
     border-radius: 5px;
     position: relative;
     margin-bottom: 5rem;
+    box-shadow: 3px 3px 3px 3px rgb(160, 129, 129);
 }
 
 .NavLink{
-    color: rgb(237, 231, 231);
+    color: rgb(80, 76, 76);
     text-decoration: none;
     font-weight: bold; 
     position: absolute; 
@@ -89,7 +93,7 @@ section{
 }
 
 .NavLink:hover{
-    color: black;
+    color: rgb(161, 169, 0);
     text-decoration: none;
 }
 
