@@ -43,7 +43,7 @@ body{
 }
 
 h2{
-    font-weight:300;
+    font-weight:bold;
     
 }
 
@@ -97,3 +97,34 @@ section{
     text-decoration: none;
 }
 
+.special {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.special h2 {
+    text-align: center;
+}
+
+.bag2 {
+    width: 85%;
+    height: 20rem;
+    background-color: antiquewhite;
+    box-shadow: 3px 3px 3px 3px rgb(160, 129, 129);
+    margin: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.bag2 img {
+    height: 20rem;
+}
+
+.bag2 p {
+    padding-left: 3rem;
+}
