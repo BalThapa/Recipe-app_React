@@ -45,8 +45,8 @@ img{
 .info{
     display: flex;
     justify-content: space-around;
-    row-gap: 10px; 
-    margin-top: 2rem;  
+    row-gap: 10px;   
+    margin:2rem 12rem;
 }
 
 .instru{
@@ -61,14 +61,14 @@ img{
 .table {
     display: table;
     width: 25rem;
-    background-color: white;
+    background-color: rgb(206, 203, 203);
     color: black;
-  
     
 }
 
 .row {
     display: table-row;
+   
 }
   
 .cell {
@@ -76,3 +76,8 @@ img{
     padding: 1rem;
     border: 1px solid;
   }
+
+.back button {
+    margin-bottom: 2rem;
+    width: 10rem;
+}

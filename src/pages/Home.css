@@ -2,6 +2,7 @@
 
 body{
     margin: 0 auto;
+
 }
 .container {
     background-color: black;
@@ -22,13 +23,16 @@ body{
     height: 100%;
     width: 100%;
     object-fit: cover;
-
-
 }
 .thoughts {
     margin: 10rem  10rem 10rem 10rem;
     z-index: 0;
     text-align: left;
+    
+}
+
+.thoughts h2 {
+    color: rgb(152, 94, 7);
 }
 
 .thoughts button {
@@ -44,7 +48,7 @@ body{
 
 h2{
     font-weight:bold;
-    
+    color:burlywood ;
 }
 
 h3{
