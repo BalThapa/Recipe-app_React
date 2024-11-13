@@ -14,6 +14,12 @@ const Form = ({submit, change, recipe}) => {
 
       },[])
     
+    const deleteIngHandler = (index) => {
+        if (numIngredients > 1) {
+            setNumIngredients(numIngredients-1);
+        }
+    };
+    
     return (
         <div>
             <div className='form-wrapper'>
@@ -58,10 +64,13 @@ const Form = ({submit, change, recipe}) => {
                                 <label htmlFor={`ingredient-${index}`}>Ingredient</label>
                                 <input type="text" name={`ingredient-${index}`} id={`ingredient-${index}`} required/>
                             </div>
-                            <div >
-                                <button className='delIng'>X</button>
+                            <div>
+                                {index> 0 && numIngredients > 1 && (
+                                    <button className='delIng' type='button' onClick={()=>deleteIngHandler(index)}>X</button>
+
+                                )}
                             </div>
-                    </div>   
+                        </div>   
                     ))}
                     
                     <button className='addMore' onClick={() => setNumIngredients(numIngredients+1)}>Add More</button>
