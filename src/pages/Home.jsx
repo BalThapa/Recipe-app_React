@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Home.css';
+import axios from 'axios';
 
 
 const Home = () => {
+  const [data, setData]= useState(null);
+  const [isLoading, setIsLoading]= useState(true);
+
+  useEffect(()=>{
+    axios.get("http://localhost:4001/recipes")
+    .then(respnse => {
+      const randomRecipe = respnse.data[Math.floor(Math.random()*respnse.data.length)];
+      setData(randomRecipe);
+      setIsLoading(false);
+    })
+  },[])
+
     return (
       <div>
         <div className='container'>
@@ -38,13 +51,40 @@ const Home = () => {
           </section>
         <div className='special'>
           <h2>Today's Special</h2>
-          <div className='bag2'>
+          {isLoading ?
+           (<p>Loading...</p>
+           ):(
+            data && (
+            <div className='bag2'>
+              <img src={data.image} alt={data.name} />
+              <div className='bg2Des'>
+              <h3>{data.name}</h3>
+              <p>{data.description}</p>
+              </div>
+              <div className='bg2Ing'>
+              <h4>Ingredients:</h4>
+              <ul>
+                {data.ingredients.map((ingredient, index) => (
+                  <li key={index}>
+                    {ingredient.quantity} - {ingredient.ingredient}
+                  </li>
+                ))}
+              </ul>
+              </div>
+              <div className='bg2Ins'>
+              <h4>Instructions:</h4>
+              <p>{data.instruction}</p>
+              </div>
+            </div>
+            ))}
+
+          {/* <div className='bag2'>
             <img src="https://www.indianveggiedelight.com/wp-content/uploads/2020/04/coconutmilk_pulao.jpg" alt="random" />
               <h2>Coming Soon ...</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque reiciendis quidem adipisci quaerat sed, 
               ut obcaecati mollitia numquam perferendis dignissimos illum pariatur neque aut porro laudantium unde 
-              aperiam blanditiis quod!</p>
-          </div>
+              aperiam blanditiis quod!</p> 
+          </div>*/}
         </div>
       </div>
       

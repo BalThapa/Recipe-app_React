@@ -115,7 +115,7 @@ section{
 
 .bag2 {
     width: 85%;
-    height: 20rem;
+    height: auto;
     background-color: antiquewhite;
     box-shadow: 3px 3px 3px 3px rgb(160, 129, 129);
     margin: 2rem;
@@ -123,12 +123,25 @@ section{
     padding: 2rem;
     display: flex;
     flex-direction: row;
+    gap:2rem;
 }
 
 .bag2 img {
-    height: 20rem;
+    height: 25rem;
+    width: 25%;
 }
 
-.bag2 p {
-    padding-left: 3rem;
+.bg2Des{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 25%;
+}
+
+.bg2Ins{
+  width: 25%;  
+}
+
+.bg2Ing{
+  width: 25%;  
 }
