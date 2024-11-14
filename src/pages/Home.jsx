@@ -9,13 +9,19 @@ const Home = () => {
   const [isLoading, setIsLoading]= useState(true);
 
   useEffect(()=>{
-    axios.get("http://localhost:4001/recipes")
-    .then(respnse => {
-      const randomRecipe = respnse.data[Math.floor(Math.random()*respnse.data.length)];
+    axios.get("http://dummyjson.com/recipes")
+    .then(response => {
+      const randomRecipe = response.data.recipes[Math.floor(Math.random()*response.data.recipes.length)];
       setData(randomRecipe);
       setIsLoading(false);
     })
+    
   },[])
+
+  useEffect(() => {
+    console.log(data);  // Logs the updated data
+  }, [data]);
+  
 
     return (
       <div>
@@ -59,21 +65,25 @@ const Home = () => {
               <img src={data.image} alt={data.name} />
               <div className='bg2Des'>
               <h3>{data.name}</h3>
-              <p>{data.description}</p>
+              <p><strong>Cusine: </strong> {data.cuisine}</p>
+              <p><strong>MealType:</strong> {data.mealType}</p>
+              <p><strong>Preparation Time:</strong> {data.prepTimeMinutes}mins</p>
+              <p><strong>Rating:</strong> {data.rating}</p>
+              <p><strong>Calories per Servings:</strong> {data.caloriesPerServing}</p>
               </div>
               <div className='bg2Ing'>
               <h4>Ingredients:</h4>
               <ul>
                 {data.ingredients.map((ingredient, index) => (
                   <li key={index}>
-                    {ingredient.quantity} - {ingredient.ingredient}
+                    {ingredient}
                   </li>
                 ))}
               </ul>
               </div>
               <div className='bg2Ins'>
               <h4>Instructions:</h4>
-              <p>{data.instruction}</p>
+              <p>{data.instructions}</p>
               </div>
             </div>
             ))}
