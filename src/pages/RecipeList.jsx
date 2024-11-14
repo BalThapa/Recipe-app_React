@@ -8,6 +8,7 @@ const RecipeList = () => {
     const [isLoading, setIsLoading]=useState(false);
     const[searchInput, setSearchInput]=useState("");
     
+    
      useEffect (()=>{
         setIsLoading(true);
         axios.get("http://localhost:4001/recipes")

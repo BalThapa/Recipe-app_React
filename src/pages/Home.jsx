@@ -9,7 +9,7 @@ const Home = () => {
   const [isLoading, setIsLoading]= useState(true);
 
   useEffect(()=>{
-    axios.get("http://dummyjson.com/recipes")
+    axios.get("https://dummyjson.com/recipes")
     .then(response => {
       const randomRecipe = response.data.recipes[Math.floor(Math.random()*response.data.recipes.length)];
       setData(randomRecipe);
@@ -87,14 +87,6 @@ const Home = () => {
               </div>
             </div>
             ))}
-
-          {/* <div className='bag2'>
-            <img src="https://www.indianveggiedelight.com/wp-content/uploads/2020/04/coconutmilk_pulao.jpg" alt="random" />
-              <h2>Coming Soon ...</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque reiciendis quidem adipisci quaerat sed, 
-              ut obcaecati mollitia numquam perferendis dignissimos illum pariatur neque aut porro laudantium unde 
-              aperiam blanditiis quod!</p> 
-          </div>*/}
         </div>
       </div>
       
