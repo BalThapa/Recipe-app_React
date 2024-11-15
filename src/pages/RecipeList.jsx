@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Cards from "../UI/Cards";
 import './RecipeList.css'
 import axios from 'axios';
+import Dummy from '../components/Dummy';
 
 const RecipeList = () => {
     const [data, setData]= useState([]); 
@@ -14,7 +15,8 @@ const RecipeList = () => {
         axios.get("http://localhost:4001/recipes")
         .then(res=>{setData(res.data)})
         setIsLoading(false)
-     },[]);
+     },[]); 
+
     const searchInputHandler = (e) => {
         setSearchInput(e.target.value)
       }
@@ -37,13 +39,13 @@ const RecipeList = () => {
 
     return (
         
-        <div>
+        <div className='recipeList'>
             <div className='search'>
                 <label htmlFor='search'>Search for recipe:</label>
                 <input onChange={searchInputHandler} />
                 <h1>Our recipes</h1>
             </div>
-            <div className={'cards'}>
+            <div className='cards'>
                 {searchFilter.map((data) => (
                 <Cards
                 key={data.id}
@@ -52,6 +54,11 @@ const RecipeList = () => {
                 />
                 ))}
             </div>
+            <div>
+                <h1>Bonus Reciepes</h1>
+                <Dummy/>
+            </div>
+            
         </div>
     );
 };

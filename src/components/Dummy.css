@@ -1,0 +1,6 @@
+.dummy{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-around;
+ }

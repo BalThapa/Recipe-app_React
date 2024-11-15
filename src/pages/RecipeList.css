@@ -1,3 +1,15 @@
+.recipeList {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+h1{
+    text-align: center;
+    font-weight: 300;
+} 
+
+
 .cards {
    display: flex; 
    flex-wrap: wrap;
