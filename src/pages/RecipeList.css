@@ -6,7 +6,7 @@
 
 h1{
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
 } 
 
 
@@ -24,13 +24,11 @@ h1{
     align-items: center;
     margin: 2rem;
 }
-.search label{
-    font-weight:350;
-    margin-bottom: 0.5rem;
-    font-size: larger;
-}
+
 .search input {
     width: 15rem;
+    padding: 5px;
+    font-size: large;
     border-radius: 5px;
     border-width: thin;   
 }
@@ -48,4 +46,17 @@ h1{
     border-radius: 3px;
    
  }
+
+.noRecipe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+    text-align: center;
+}
  
+.noRecipe a {
+    text-decoration: none;
+    color: rgb(4, 4, 74);
+} 

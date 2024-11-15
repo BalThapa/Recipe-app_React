@@ -40,19 +40,24 @@ const RecipeList = () => {
     return (
         
         <div className='recipeList'>
+             <h1>Our recipes</h1>
             <div className='search'>
-                <label htmlFor='search'>Search for recipe:</label>
-                <input onChange={searchInputHandler} />
-                <h1>Our recipes</h1>
+                <input onChange={searchInputHandler} placeholder='Search for recipe:'/>
             </div>
             <div className='cards'>
-                {searchFilter.map((data) => (
+                {searchFilter.length === 0 ? (
+                    <div className='noRecipe'>
+                        <h2>You have not added your recipe. Click to  <a href="./addRecipe">Add one.</a></h2>
+                    </div>
+                ):(
+                searchFilter.map((data) => (
                 <Cards
                 key={data.id}
                 recipe={data}
                 onDelete = {()=> deleteRecipe(data.id)}
                 />
-                ))}
+                ))
+                )}
             </div>
             <div>
                 <h1>Bonus Reciepes</h1>
