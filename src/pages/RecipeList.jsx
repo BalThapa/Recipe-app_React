@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import Cards from "../UI/Cards";
 import './RecipeList.css'
 import axios from 'axios';
@@ -47,7 +48,7 @@ const RecipeList = () => {
             <div className='cards'>
                 {searchFilter.length === 0 ? (
                     <div className='noRecipe'>
-                        <h2>You have not added your recipe. Click to  <a href="./addRecipe">Add one.</a></h2>
+                        <h2>You have not added your recipe yet. Click to <NavLink to='/addRecipe'>Add One</NavLink> </h2>
                     </div>
                 ):(
                 searchFilter.map((data) => (
