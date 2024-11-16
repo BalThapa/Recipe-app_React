@@ -9,8 +9,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return ( 
-    //basename is for the build to know so that the home page is displayed while deploying in Github pages
-    <BrowserRouter basename="/Recipe-app_React"> 
+    <BrowserRouter> 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
