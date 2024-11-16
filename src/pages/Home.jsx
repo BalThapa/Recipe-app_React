@@ -37,7 +37,7 @@ const Home = () => {
           </div>
         </div>
         <div className='list'>
-          <h2>Looking For the recipes?</h2></div>
+          <h1>Looking For the recipes?</h1></div>
           <section>
             <div className='bag'>
               <h3>Browse recipes</h3>
@@ -56,7 +56,7 @@ const Home = () => {
             </div>
           </section>
         <div className='special'>
-          <h2>Today's Special</h2>
+          <h1>Today's Special</h1>
           {isLoading ?
            (<p>Loading...</p>
            ):(
