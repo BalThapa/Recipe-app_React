@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return ( 
-    <BrowserRouter basename="/Recipe-app_React"> 
+    <BrowserRouter> 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
