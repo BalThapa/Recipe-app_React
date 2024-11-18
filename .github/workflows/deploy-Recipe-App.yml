@@ -31,4 +31,4 @@ jobs:
         run: npm install -g vercel
 
       - name: Deploy to Vercel (with Debugging)
-        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --project ${{ secrets.VERCEL_PROJECT_ID }} --debug
+        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --scope ${{ secrets.VERCEL_PROJECT_ID }} --debug
