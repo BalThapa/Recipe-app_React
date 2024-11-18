@@ -1,5 +1,4 @@
-[![Node CI](https://github.com/BalThapa/Recipe-app_React/blob/main/github/workflows/deployVercel.yml)](https://github.com/BalThapa/Recipe-app_React/blob/main/github/workflows/deployVercel.yml)
-[![Node CI](https://github.com/BalThapa/Recipe-app_React/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BalThapa/Recipe-app_React/actions/workflows/pages/pages-build-deployment)
+[![Node CI](https://github.com/BalThapa/Recipe-app_React/actions/workflows/production.yaml/badge.svg)](https://github.com/BalThapa/My-portfolio-react-/actions/workflows/production.yaml)
 
 # Recipe App
 
