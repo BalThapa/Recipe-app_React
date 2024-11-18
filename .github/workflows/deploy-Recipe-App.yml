@@ -1,0 +1,35 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger deployment when a PR is merged to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Use the Node version you need
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
+      - name: Deploy to Vercel
+        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --project ${{ secrets.VERCEL_PROJECT_ID }}
