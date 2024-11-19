@@ -1,25 +1,22 @@
-.recipeDetail{
+.recipeDetail {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 3rem;
-
 }
 
-.recipeDetail h2{
+.recipeDetail h2 {
     margin-left: 0;
 }
 
-.description{
+.description {
     margin-left: 3rem;
     padding: 5rem;
     padding-top: 0;
     width: 52rem;
-    
-
 }
 
-.intro{
+.intro {
     position: relative; 
     display: flex;
     justify-content: space-around;
@@ -27,13 +24,13 @@
     margin-top: 3rem; 
 }
 
-img{
+img {
     height: 25rem;
     width: 25rem;
     border-radius: 0.5rem;         
 }
 
-.flag img{
+.flag img {
     height: 4rem;
     width: 4rem;
     border-radius: 10px;
@@ -41,23 +38,21 @@ img{
     background-position: center center;
     position: absolute;
     top: 0;
-    left:0;   
+    left: 0;   
 }
 
-.info{
+.info {
     display: flex;
     justify-content: space-around;
     row-gap: 10px;   
-    margin:2rem 12rem;
+    margin: 2rem 12rem;
 }
 
-.instru{
+.instru {
     padding: 5rem;
     padding-top: 0;
     margin-bottom: 2rem;
     margin-left: 3rem;
-   
-    
 }
 
 .table {
@@ -65,21 +60,130 @@ img{
     width: 25rem;
     background-color: rgb(206, 203, 203);
     color: black;
-    
 }
 
 .row {
     display: table-row;
-   
 }
-  
+
 .cell {
     display: table-cell;
     padding: 1rem;
     border: 1px solid;
-  }
+}
 
 .back button {
     margin-bottom: 2rem;
     width: 10rem;
+}
+
+@media (max-width: 1024px) {
+    .recipeDetail {
+        margin: 2rem;
+    }
+
+    .description {
+        margin-left: 1rem;
+        padding: 3rem;
+        width: 100%;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        margin: 2rem 2rem;
+        flex-direction: column;
+    }
+
+    .instru {
+        padding: 3rem;
+        margin-left: 1rem;
+    }
+
+    .table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .recipeDetail {
+        margin: 1rem;
+    }
+
+    .description {
+        margin-left: 0;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .info {
+        margin: 2rem;
+        flex-direction: column;
+    }
+
+    .instru {
+        padding: 2rem;
+        margin-left: 0;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .back button {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipeDetail {
+        margin: 1rem;
+    }
+
+    .description {
+        margin-left: 0;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .info {
+        margin: 2rem;
+        flex-direction: column;
+    }
+
+    .instru {
+        padding: 1rem;
+        margin-left: 0;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .back button {
+        width: 6rem;
+    }
 }

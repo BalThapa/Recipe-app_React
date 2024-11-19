@@ -1,23 +1,22 @@
 .recipeList {
     display: flex;
     flex-direction: column;
-   
 }
 
-h1{
+h1 {
     text-align: center;
     font-weight: 500;
-} 
-
+}
 
 .cards {
-   display: flex; 
-   flex-wrap: wrap;
-   justify-items: center;
-   justify-content: space-between;
-   margin: 0 15rem 5rem 15rem ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-between;
+    margin: 0 15rem 5rem 15rem;
 }
-.search{
+
+.search {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,22 +29,22 @@ h1{
     padding: 5px;
     font-size: large;
     border-radius: 5px;
-    border-width: thin;   
+    border-width: thin;
 }
 
-.search h1{
-    font-weight:300;
+.search h1 {
+    font-weight: 300;
     margin-top: 3rem;
 }
- button{
+
+button {
     background-color: rgb(100, 91, 91);
     color: wheat;
     padding: 6px;
     border: none;
     font-size: large;
     border-radius: 3px;
-   
- }
+}
 
 .noRecipe {
     display: flex;
@@ -55,8 +54,44 @@ h1{
     width: 100%;
     text-align: center;
 }
- 
+
 .noRecipe a {
     text-decoration: none;
     color: rgb(4, 4, 74);
-} 
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .search input {
+        width: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        margin: 0 2rem 5rem 2rem;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        margin: 0 1rem 5rem 1rem;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 8rem;
+    }
+
+    .noRecipe {
+        height: 15rem;
+    }
+}

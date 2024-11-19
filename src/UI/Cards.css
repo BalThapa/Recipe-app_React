@@ -1,38 +1,37 @@
-.card{
-    background-color:antiquewhite;
+.card {
+    background-color: antiquewhite;
     border: none;
     height: auto;
-    width: 15rem; 
+    width: 15rem;
     border-radius: 0.5rem;
     margin: 2rem;
     margin-left: 3rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     padding-bottom: 1rem;
     position: relative;
     box-shadow: 2px 2px 2px 2px rgb(214, 167, 167);
-   
 }
 
-.box img{
+.box img {
     height: 12rem;
-    width: 15rem; 
+    width: 15rem;
     border: none;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.box1 img{
+.box1 img {
     height: 4rem;
     width: 4rem;
     border-radius: 10px;
     position: absolute;
     top: 0;
-    right:0;   
+    right: 0;
 }
 
-.details h4{
+.details h4 {
     font-weight: bolder;
 }
 
@@ -63,13 +62,14 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    gap: 2rem;
 }
 
 .intro2 {
     display: flex;
     flex-direction: column;
 }
+
 .detail2 {
     display: flex;
     flex-direction: row;
@@ -80,7 +80,7 @@
     width: 100%;
 }
 
-.card2Des{
+.card2Des {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -93,12 +93,87 @@
     justify-content: space-between;
 }
 
-.card2Ins{
-  width: 50%;  
+.card2Ins {
+    width: 50%;
 }
 
-.card2Ing{
-  width: 50%;  
-  
+.card2Ing {
+    width: 50%;
 }
 
+@media (max-width: 1024px) {
+    .card {
+        margin-left: 2rem;
+        width: 12rem;
+    }
+    .box img {
+        height: 10rem;
+        width: 12rem;
+    }
+
+    .box1 img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .card2 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 10rem;
+        margin-left: 1rem;
+    }
+
+    .box img {
+        height: 9rem;
+        width: 10rem;
+    }
+
+    .box1 img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .card2 {
+        width: 90%;
+    }
+
+    .card2 img {
+        height: 20rem;
+        width: 100%;
+    }
+
+    .card2Des {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .box img {
+        height: 8rem;
+        width: 10rem;
+    }
+
+    .box1 img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .card2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card2 img {
+        height: 20rem;
+    }
+}

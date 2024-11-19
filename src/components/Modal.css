@@ -1,4 +1,4 @@
-.modal{
+.modal {
     background-color: rgb(20, 20, 78);
     color: wheat;
     width: 600px;
@@ -23,23 +23,52 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 100;    
+    z-index: 100;
 }
 
-h2{
+h2 {
     font-weight: bold;
 }
 
-.thumbs{
+.thumbs {
     font-size: 5rem;
     margin-bottom: 0;
     margin-top: 0;
 }
 
-.close{
+.close {
     padding: 1rem;
     background-color: rgb(75, 44, 3);
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .modal {
+        width: 80%;
+        padding: 1.5rem;
+    }
 
+    .thumbs {
+        font-size: 4rem;
+    }
+
+    .close {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .thumbs {
+        font-size: 3rem;
+    }
+
+    .close {
+        padding: 0.8rem;
+    }
+}

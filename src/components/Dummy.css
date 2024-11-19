@@ -1,6 +1,25 @@
-.dummy{
-    display: flex; 
+.dummy {
+    display: flex;
     flex-wrap: wrap;
     justify-items: center;
     justify-content: space-around;
- }
+}
+
+@media (max-width: 1024px) {
+    .dummy {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .dummy {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .dummy {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

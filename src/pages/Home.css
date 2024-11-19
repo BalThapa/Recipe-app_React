@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-body{
+body {
     margin: 0 auto;
-
 }
+
 .container {
     background-color: black;
     font-family: 'Darumadrop One', cursive;
@@ -12,23 +12,23 @@ body{
     flex-direction: column;
     text-align: center;
     font-size: x-large;
-    font-weight:bolder;
-    color: rgb(100, 124, 50); 
+    font-weight: bolder;
+    color: rgb(100, 124, 50);
     position: relative;
 }
 
-.container video{
+.container video {
     position: absolute;
     background-attachment: fixed;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
 .thoughts {
-    margin: 10rem  10rem 10rem 10rem;
+    margin: 10rem 10rem 10rem 10rem;
     z-index: 0;
     text-align: left;
-    
 }
 
 .thoughts h2 {
@@ -46,22 +46,21 @@ body{
     margin-top: 2rem;
 }
 
-h1{
-    font-weight:bold;
-    color:burlywood ;
+h1 {
+    font-weight: bold;
+    color: burlywood;
 }
 
-h3{
-    font-weight:bold;
-
+h3 {
+    font-weight: bold;
 }
 
-p{
+p {
     line-height: 1.5;
     font-weight: 500;
 }
 
-.list{
+.list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,12 +68,15 @@ p{
     padding: 2rem;
 }
 
-section{
+section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-.bag{
+.bag {
     min-height: 20vh;
     background-color: antiquewhite;
     width: 25rem;
@@ -87,16 +89,16 @@ section{
     box-shadow: 3px 3px 3px 3px rgb(160, 129, 129);
 }
 
-.NavLink{
+.NavLink {
     color: rgb(80, 76, 76);
     text-decoration: none;
-    font-weight: bold; 
-    position: absolute; 
-    bottom: 0;  
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
     padding-bottom: 0.5em;
 }
 
-.NavLink:hover{
+.NavLink:hover {
     color: rgb(161, 169, 0);
     text-decoration: none;
 }
@@ -123,7 +125,7 @@ section{
     padding: 2rem;
     display: flex;
     flex-direction: row;
-    gap:2rem;
+    gap: 2rem;
 }
 
 .bag2 img {
@@ -131,17 +133,111 @@ section{
     width: 25%;
 }
 
-.bg2Des{
+.bg2Des {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
     width: 25%;
 }
 
-.bg2Ins{
-  width: 25%;  
+.bg2Ins {
+    width: 25%;
 }
 
-.bg2Ing{
-  width: 25%;  
+.bg2Ing {
+    width: 25%;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        font-size: large;
+        margin: 0;
+    }
+
+    .thoughts {
+        margin: 5rem;
+    }
+
+    .bag {
+        width: 22rem;
+    }
+
+    .bag2 {
+        flex-direction: column;
+    }
+
+    .bag2 img {
+        width: 100%;
+    }
+
+    .bg2Des, .bg2Ins, .bg2Ing {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        font-size: medium;
+        margin: 0;
+    }
+
+    .thoughts {
+        margin: 3rem;
+    }
+
+    .bag {
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    .bag2 {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .bag2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bg2Des, .bg2Ins, .bg2Ing {
+        width: 100%;
+    }
+
+    .NavLink {
+        font-size: small;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        font-size: small;
+        padding: 1rem;
+    }
+
+    .thoughts {
+        margin: 2rem;
+    }
+
+    .bag {
+        width: 100%;
+    }
+
+    .bag2 {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .bag2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bg2Des, .bg2Ins, .bg2Ing {
+        width: 100%;
+    }
+
+    .NavLink {
+        font-size: smaller;
+    }
 }
