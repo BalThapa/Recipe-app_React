@@ -9,9 +9,10 @@ const Form = ({submit, change, recipe}) => {
     useEffect(()=>{
       
         axios.get('https://restcountries.com/v3.1/all')
-          .then(res=>{setCountryList(res.data.map((country) => {return(country.name.common)}))
-          });
-
+          .then(res => {
+            setCountryList(res.data.map((country) => country.name.common))
+          })
+          .catch(err=> console.error("Country fetch failed:", err));
       },[])
     
     const deleteIngHandler = (index) => {
@@ -23,8 +24,8 @@ const Form = ({submit, change, recipe}) => {
     return (
         <div>
             <div className='form-wrapper'>
-                <h2>Add new Recipe</h2>
-                <form onSubmit={submit} onChange={change} recipe={recipe} method="post">
+                <h1>Add new Recipe</h1>
+                <form onSubmit={submit} onChange={change} recipe={recipe} method="post" className='form'>
                 <div>
                     <label htmlFor="name" >Dish Name</label>
                     <input type="text" name="name" id='name' required/>
